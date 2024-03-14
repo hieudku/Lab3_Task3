@@ -51,48 +51,51 @@ namespace Lab3_Task3
         {
             Console.WriteLine($"Your detail: {firstName} {lastName} {emailAddress} {dateOfBirth}");
         }
-        public void chineseZodiac(int year)
+        public string chineseZodiac(int year)
         {
+            string chineseYear = "";
             // Calculate the Chinese zodiac
             switch ((year - 4) % 12)
             {
+                
                 case 0:
-                    Console.WriteLine("Your Chinese zodiac is Rat");
+                    chineseYear = "Rat";
                     break;
                 case 1:
-                    Console.WriteLine("Your Chinese zodiac is Ox");
+                    chineseYear = "Ox";
                     break;
                 case 2:
-                    Console.WriteLine("Your Chinese zodiac is Tiger");
+                    chineseYear = "Tiger";
                     break;
                 case 3:
-                    Console.WriteLine("Your Chinese zodiac is Rabbit");
+                    chineseYear = "Rabbit";
                     break;
                 case 4:
-                    Console.WriteLine("Your Chinese zodiac is Dragon");
+                    chineseYear = "Dragon";
                     break;
                 case 5:
-                    Console.WriteLine("Your Chinese zodiac is Snake");
+                    chineseYear = "Snake";
                     break;
                 case 6:
-                    Console.WriteLine("Your Chinese zodiac is Horse");
+                    chineseYear = "Horse";
                     break;
                 case 7:
-                    Console.WriteLine("Your Chinese zodiac is Goat");
+                    chineseYear = "Goat";
                     break;
                 case 8:
-                    Console.WriteLine("Your Chinese zodiac is Monkey");
+                    chineseYear = "Monkey";
                     break;
                 case 9:
-                    Console.WriteLine("Your Chinese zodiac is Rooster");
+                    chineseYear = "Rooster";
                     break;
                 case 10:
-                    Console.WriteLine("Your Chinese zodiac is Dog");
+                    chineseYear = "Dog";
                     break;
                 case 11:
-                    Console.WriteLine("Your Chinese zodiac is Pig");
+                    chineseYear = "Pig";
                     break;
             }
+            return chineseYear;
         }
         public void westernZodiac(int month, int day)
         {

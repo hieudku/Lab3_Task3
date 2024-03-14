@@ -13,7 +13,7 @@ namespace Lab3_Task3
             int year;
             int month;
             int day;
-            string sign;
+            string chineseYear;
 
             DateTime zeroTime = new DateTime(1, 1, 1);
 
@@ -36,7 +36,9 @@ namespace Lab3_Task3
 
             Person person1 = new Person("John", "Doe", "john.doe@gmail.com", date1);
             person1.printFields();
-            person1.chineseZodiac(year);
+            chineseYear = person1.chineseZodiac(year);
+            Console.WriteLine($"You are born in the year of the {chineseYear}");
+
             // Check person's age
             TimeSpan span = DateTime.Now - date1;
 
