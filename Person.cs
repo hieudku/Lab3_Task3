@@ -3,19 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Lab3_Task3;
 namespace Lab3_Task3
 {
     internal class Person
     {
-        private string firstName;
-        private string lastName;
-        private string emailAddress;
-        private DateTime dateOfBirth;
+        private readonly string firstName;
+        private readonly string lastName;
+        private readonly string emailAddress;
+        private readonly DateTime dateOfBirth;
 
         public string FirstName { 
             get => firstName; 
-            set => firstName = value; 
+            
         }
         public DateTime DOB
         {
@@ -47,11 +47,13 @@ namespace Lab3_Task3
             lastName = lName;
             dateOfBirth = dOB;
         }
-        public void printFields()
+        public void PrintFields()
         {
-            Console.WriteLine($"Your detail: {firstName} {lastName} {emailAddress} {dateOfBirth}");
+            Console.WriteLine($"Your full name: {firstName} {lastName}");
+            Console.WriteLine($"Your email address: {emailAddress}");
+            Console.WriteLine($"Your date of birth: {dateOfBirth}");
         }
-        public string chineseZodiac(int year)
+        public string ChineseZodiac(int year)
         {
             string chineseYear = "";
             // Calculate the Chinese zodiac
@@ -97,7 +99,7 @@ namespace Lab3_Task3
             }
             return chineseYear;
         }
-        public void westernZodiac(int month, int day)
+        public void WesternZodiac(int month, int day)
         {
             if (month == 12)
             {
@@ -105,7 +107,7 @@ namespace Lab3_Task3
                 if (day < 22)
                     Console.WriteLine("Sagittarius");
                 else
-                    Console.WriteLine("capricorn");
+                    Console.WriteLine("Capricorn");
             }
 
             else if (month == 1)
@@ -113,7 +115,7 @@ namespace Lab3_Task3
                 if (day < 20)
                     Console.WriteLine("Capricorn");
                 else
-                    Console.WriteLine("aquarius");
+                    Console.WriteLine("Aquarius");
             }
 
             else if (month == 2)
@@ -121,7 +123,7 @@ namespace Lab3_Task3
                 if (day < 19)
                     Console.WriteLine("Aquarius");
                 else
-                    Console.WriteLine("pisces");
+                    Console.WriteLine("Pisces");
             }
 
             else if (month == 3)
@@ -129,14 +131,14 @@ namespace Lab3_Task3
                 if (day < 21)
                     Console.WriteLine("Pisces");
                 else
-                    Console.WriteLine("aries");
+                    Console.WriteLine("Aries");
             }
             else if (month == 4)
             {
                 if (day < 20)
                     Console.WriteLine("Aries");
                 else
-                    Console.WriteLine("taurus");
+                    Console.WriteLine("Taurus");
             }
 
             else if (month == 5)
@@ -144,7 +146,7 @@ namespace Lab3_Task3
                 if (day < 21)
                     Console.WriteLine("Taurus");
                 else
-                    Console.WriteLine("gemini");
+                    Console.WriteLine("Gemini");
             }
 
             else if (month == 6)
@@ -152,7 +154,7 @@ namespace Lab3_Task3
                 if (day < 21)
                     Console.WriteLine("Gemini");
                 else
-                    Console.WriteLine("cancer");
+                    Console.WriteLine("Cancer");
             }
 
             else if (month == 7)
@@ -160,7 +162,7 @@ namespace Lab3_Task3
                 if (day < 23)
                     Console.WriteLine("Cancer"); 
                 else
-                    Console.WriteLine("leo");
+                    Console.WriteLine("Leo");
             }
 
             else if (month == 8)
@@ -168,7 +170,7 @@ namespace Lab3_Task3
                 if (day < 23)
                     Console.WriteLine("Leo");
                 else
-                    Console.WriteLine("virgo");
+                    Console.WriteLine("Virgo");
             }
 
             else if (month == 9)
@@ -176,7 +178,7 @@ namespace Lab3_Task3
                 if (day < 23)
                     Console.WriteLine("Virgo");
                 else
-                    Console.WriteLine("libra");
+                    Console.WriteLine("Libra");
             }
 
             else if (month == 10)
@@ -184,15 +186,15 @@ namespace Lab3_Task3
                 if (day < 23)
                     Console.WriteLine("Libra");
                 else
-                    Console.WriteLine("scorpio");
+                    Console.WriteLine("Scorpio");
             }
 
             else if (month == 11)
             {
                 if (day < 22)
-                    Console.WriteLine("scorpio");
+                    Console.WriteLine("Scorpio");
                 else
-                    Console.WriteLine("sagittarius");
+                    Console.WriteLine("Sagittarius");
             }
         }
     }
