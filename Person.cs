@@ -96,7 +96,101 @@ namespace Lab3_Task3
         }
         public void westernZodiac(int month, int day)
         {
+            if (month == 12)
+            {
 
+                if (day < 22)
+                    Console.WriteLine("Sagittarius");
+                else
+                    Console.WriteLine("capricorn");
+            }
+
+            else if (month == 1)
+            {
+                if (day < 20)
+                    Console.WriteLine("Capricorn");
+                else
+                    Console.WriteLine("aquarius");
+            }
+
+            else if (month == 2)
+            {
+                if (day < 19)
+                    Console.WriteLine("Aquarius");
+                else
+                    Console.WriteLine("pisces");
+            }
+
+            else if (month == 3)
+            {
+                if (day < 21)
+                    Console.WriteLine("Pisces");
+                else
+                    Console.WriteLine("aries");
+            }
+            else if (month == 4)
+            {
+                if (day < 20)
+                    Console.WriteLine("Aries");
+                else
+                    Console.WriteLine("taurus");
+            }
+
+            else if (month == 5)
+            {
+                if (day < 21)
+                    Console.WriteLine("Taurus");
+                else
+                    Console.WriteLine("gemini");
+            }
+
+            else if (month == 6)
+            {
+                if (day < 21)
+                    Console.WriteLine("Gemini");
+                else
+                    Console.WriteLine("cancer");
+            }
+
+            else if (month == 7)
+            {
+                if (day < 23)
+                    Console.WriteLine("Cancer"); 
+                else
+                    Console.WriteLine("leo");
+            }
+
+            else if (month == 8)
+            {
+                if (day < 23)
+                    Console.WriteLine("Leo");
+                else
+                    Console.WriteLine("virgo");
+            }
+
+            else if (month == 9)
+            {
+                if (day < 23)
+                    Console.WriteLine("Virgo");
+                else
+                    Console.WriteLine("libra");
+            }
+
+            else if (month == 10)
+            {
+                if (day < 23)
+                    Console.WriteLine("Libra");
+                else
+                    Console.WriteLine("scorpio");
+            }
+
+            else if (month == 11)
+            {
+                if (day < 22)
+                    Console.WriteLine("scorpio");
+                else
+                    Console.WriteLine("sagittarius");
+            }
         }
     }
 }

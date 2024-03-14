@@ -13,6 +13,7 @@ namespace Lab3_Task3
             int year;
             int month;
             int day;
+            string sign;
 
             DateTime zeroTime = new DateTime(1, 1, 1);
 
@@ -52,13 +53,14 @@ namespace Lab3_Task3
                 }
 
 
+
             // Calculate birthday
             if (DateTime.Today.Month == month && DateTime.Today.Day == day)
             {
                 Console.WriteLine("Today is your birthday! Happy birthday!");
             }
 
-
+            person1.westernZodiac(month, day);
 
             // Calculate the Sun sign
 
